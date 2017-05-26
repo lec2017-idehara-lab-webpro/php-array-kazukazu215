@@ -13,22 +13,25 @@ $fruits = [
   'orange' => 'orange',
   'strawberry' => 'red',
 ];
-foreach($fruits as $c)
-{
-  print($c);
-}
 
+$fruits['grape']='grape';
+var_dump($fruits);
 print('<hr \>');
 
 $name = ['TAMA', 'MIKE', 'SHIRO'];
+$name[]='BUCHI';
 print( $name[1] ); // MIKE
-
+var_dump($name);
 print('<hr \>');
+
+
+  print("<table border>");
 
 foreach($fruits as $f => $c)
 {
-  print("$f, $c");
+  print("<tr><td>$f</td><td>$c</td></tr>");
 }
+  print("</table>");
 
  ?>
 
